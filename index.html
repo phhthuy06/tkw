@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- header -->
+    <header>
+        <div class="logo">Films.15</div>
+        <div class="menu-container">
+            <ul class="menu-list">
+              <li class="menu-list-item active"><a href="index.html">Trang chủ</a></li>          
+              <li class="menu-list-item dropdown">
+                <a href="theloai.html">Thể loại</a>
+                <ul class="sub-menu">
+                  <li><a href="theloai.html?genre=hanhdong">Hành Động</a></li>
+                  <li><a href="theloai.html?genre=tinhcam">Tình cảm </a></li>
+                  <li><a href="theloai.html?genre=haihuoc">Hài Hước</a></li>
+                  <li><a href="theloai.html?genre=anime">Anime</a></li>
+                </ul>
+              </li>
+              <li class="menu-list-item dropdown">
+                <a href="quocgia.html">Quốc Gia</a>
+                <ul class="sub-menu">
+                  <li><a href="quocgia.html?country=vietnam">Việt Nam</a></li>
+                  <li><a href="quocgia.html?country=hanquoc">Hàn Quốc</a></li>
+                  <li><a href="quocgia.html?country=my">Mỹ</a></li>
+                  <li><a href="quocgia.html?country=trungquoc">Trung Quốc</a></li>
+                </ul>
+              </li>
+              <li class="menu-list-item"><a href="lienhe.html">Liên hệ</a></li>
+             
+            </div>
+            <!--search-->
+            <div class="search-wrapper">
+                <svg id="toggleSearch" xmlns="http://www.w3.org/2000/svg" fill="none"
+                     viewBox="0 0 20 20" style="cursor:pointer">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Tìm kiếm phim..." />
+              </div>
+              <p id="searchResult"></p>        
+    </header>
+
+    <!-- slider -->
+    <div class="slider">
+        <!-- list Items -->
+        <div class="list">
+            <div class="item active" id="The Meg">
+                <img src="tchu4.webp">
+                <div class="content">
+                    <p>PHIM HOT</p>
+                    <h2>The Meg</h2>
+                    <p>
+                        Kẻ săn mồi cổ đại trỗi dậy từ đáy vực sâu...
+                        Kích thước khổng lồ. Tốc độ không tưởng. Cơn ác mộng dưới lòng đại dương đang chờ săn mồi.
+                    </p>
+                    <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+                </div>
+            </div>
+            <div class="item" id="Harry Potter">
+                <img src="tchu2.webp">
+                <div class="content">
+                    <p>PHIM HOT</p>
+                    <h2>Harry Potter</h2>
+                    <p>
+                        “Chuyến tàu số 9¾ không chỉ đưa bạn đến Hogwarts, mà còn mở ra cả một thế giới kỳ diệu.”
+                    </p>
+                    <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+                </div>
+            </div>
+            <div class="item" id="The Little Mermaid">
+                <img src="tchu3.webp">
+                <div class="content">
+                    <p>PHIM HOT</p>
+                    <h2> The Little Mermaid </h2>
+                    <p>
+                        Cô đánh đổi giọng hát… để theo đuổi trái tim mình.
+                        Một câu chuyện cổ tích kinh điển về tình yêu, tự do và khát khao được là chính mình.
+                    </p>
+                    <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+                </div>
+            </div>
+            <div class="item" id="Người Khởi Lửa">
+                <img src="tchu5.webp">
+                <div class="content">
+                    <p>PHIM HOT</p>
+                    <h2>Người Khởi Lửa</h2>
+                    <p>
+                        “Sức mạnh nằm trong đôi mắt cô bé – và nó có thể đốt cháy cả thế giới.”
+                    </p>
+                    <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+                </div>
+            </div>
+            <div class="item" id="The Meg">
+                <img src="tchu1.webp">
+                <div class="content" id="Venom">
+                    <p>PHIM HOT</p>
+                    <h2>Venom</h2>
+                    <p>
+                        Ký sinh vật ngoài hành tinh. Người đàn ông bị nguyền rủa. Một mối liên kết chết người.
+                 Khi chính nghĩa và bóng tối hòa làm một, kẻ phản anh hùng được sinh ra.
+                    </p>
+                    <button class="watch-btn" onclick="openModal('/marvel.mp4')">▶ Watch</button>
+                </div>
+            </div>
+        </div>
+        <!-- button arrows -->
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- thumbnail -->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="tchu4,.webp">
+                
+            </div>
+            <div class="item">
+                <img src="tchu2,.webp">
+            </div>
+            <div class="item">
+                <img src="tchu3,.webp"> 
+            </div>
+            <div class="item">
+                <img src="tchu5,.webp">
+            </div>
+            <div class="item">
+                <img src="tchu1,.webp">
+            </div>
+        </div>
+    </div>
+
+<!-- Modal video -->
+<div id="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); z-index:9999;">
+    <!-- Nút đóng -->
+    <span onclick="closeModal()" style="position:absolute; top:20px; right:30px; font-size:40px; color:white; cursor:pointer;">&times;</span>
+    
+    <!-- Video -->
+    <video id="trailer" controls autoplay style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:90%; height:auto; max-height:90%;">
+        <source src="" type="video/mp4">
+      Trình duyệt không hỗ trợ video.
+    </video>
+</div>
+  
+<script src="app.js"></script>
+</body>
+</html>
