@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="theloai.css">
+</head>
+<body>
+        <!-- header -->
+    <header>
+        <div class="logo">Films.15</div>
+        <div class="menu-container">
+            <ul class="menu-list">
+              <li class="menu-list-item active"><a href="index.html">Trang chủ</a></li>          
+              <li class="menu-list-item dropdown">
+                <a href="theloai.html">Thể loại</a>
+                <ul class="sub-menu">
+                  <li><a href="theloai.html?genre=hanhdong">Hành Động</a></li>
+                  <li><a href="theloai.html?genre=tinhcam">Tình cảm </a></li>
+                  <li><a href="theloai.html?genre=haihuoc">Hài Hước</a></li>
+                  <li><a href="theloai.html?genre=anime">Anime</a></li>
+                </ul>
+              </li>
+              <li class="menu-list-item dropdown">
+                <a href="#">Quốc Gia</a>
+                <ul class="sub-menu">
+                  <li><a href="quocgia.html?country=vietnam">Việt Nam</a></li>
+                  <li><a href="quocgia.html?country=hanquoc">Hàn Quốc</a></li>
+                  <li><a href="quocgia.html?country=my">Mỹ</a></li>
+                  <li><a href="quocgia.html?country=trungquoc">Trung Quốc</a></li>
+                </ul>
+              </li>
+              <li class="menu-list-item"><a href="lienhe.html">Liên hệ</a></li>
+             
+            </div>
+            <!--search-->
+            <div class="search-wrapper">
+                <svg id="toggleSearch" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" style="cursor:pointer; width: 24px; height: 24px;">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                </svg>
+                <input type="text" id="searchInput" placeholder="Tìm kiếm phim..." style="display:none; margin-left: 10px;" />
+              </div>
+              <p id="searchResult" style="color: red;"></p>
+              
+       
+    </header>
+ 
+  <!-- === SLIDER PHIM HÀNH ĐỘNG === -->
+<section class="slider hanhdong-slider genre-section">
+    <div class="list hanhdong-list">
+      <div class="item active" data-title=" Top Gun – Phi công siêu đẳng ">
+        <img src="hdong1.jpeg" />
+        <div class="content">
+            <p> PHIM HÀNH ĐỘNG </p>
+          <h2>Top Gun – Phi công siêu đẳng </h2>
+          <p>Sau hơn 30 năm phục vụ, phi công huyền thoại Pete "Maverick" Mitchell trở lại – không phải để nghỉ ngơi, mà để huấn luyện một thế hệ phi công tinh nhuệ mới cho một nhiệm vụ bất khả thi. Đối mặt với quá khứ, hiểm nguy và tốc độ, Maverick phải lựa chọn giữa luật lệ và bản năng.</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+        </div>
+      </div>
+      <div class="item" data-title="The Batman">
+        <img src="hdong2.jpeg" />
+        <div class="content">
+            <p> PHIM HÀNH ĐỘNG </p>
+          <h2> The Batman </h2>
+          <p>Trong năm thứ hai chiến đấu chống tội phạm, Batman lần theo dấu vết của tên sát nhân hàng loạt Riddler – kẻ chuyên để lại manh mối tại hiện trường. Càng điều tra, Bruce Wayne càng phát hiện những bí mật đen tối về chính gia đình mình và hệ thống tham nhũng đang chi phối Gotham.  </p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+         </div>
+      </div>
+      <div class="item" data-title="Jurassic World: Dominion">
+        <img src="hdong3.jpeg" />
+        <div class="content">
+            <p> PHIM HÀNH ĐỘNG </p>
+          <h2> Jurassic World: Dominion</h2>
+          <p>Thế giới đã thay đổi – khủng long giờ đây sống chung với con người. Khi một mối đe dọa di truyền mới trỗi dậy, những anh hùng từ quá khứ và hiện tại buộc phải hợp sức trong cuộc chiến quyết định số phận của hành tinh.</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+        </div>
+      </div>
+      <div class="item" data-title="Run- Trốn chạy">
+        <img src="hdong4.webp" />
+        <div class="content">
+            <p> PHIM HÀNH ĐỘNG </p>
+          <h2> Run- Trốn chạy </h2>
+          <p>Dom Cobb là một chuyên gia đánh cắp thông tin bằng cách xâm nhập vào giấc mơ của người khác. Để có cơ hội trở về bên các con, anh nhận nhiệm vụ bất khả thi: không phải đánh cắp, mà là gieo ý tưởng vào tiềm thức một người – một nhiệm vụ mang tên “inception”. Càng lún sâu vào giấc mơ, ranh giới giữa thực và ảo càng trở nên mong manh.</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+        </div>
+      </div>
+      <div class="item" data-title="The Dark Knight">
+        <img src="hdong5.jpeg" />
+        <div class="content">
+            <p> PHIM HÀNH ĐỘNG </p>
+          <h2> The Dark Knight</h2>
+          <p>Sau khi thiết lập trật tự cho Gotham trong phần trước (Batman Begins), Batman, cùng công tố viên Harvey Dent và Trung úy Gordon, cố gắng xóa sạch tội phạm. Tuy nhiên, một kẻ thù mới xuất hiện: Joker – tên hề điên loạn gieo rắc hỗn loạn và thách thức mọi giới hạn đạo đức của Batman.</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+         </div>
+      </div>
+      <div class="item" data-title="Suicide Squad">
+        <img src="hdong6.jpeg" />
+        <div class="content">
+            <p> PHIM HÀNH ĐỘNG </p>
+          <h2>Suicide Squad</h2>
+          <p>Sau cái chết của Superman, chính phủ Mỹ lập ra một biệt đội tội phạm nguy hiểm có năng lực đặc biệt – được gọi là Suicide Squad – để thực hiện các nhiệm vụ tự sát nhằm đổi lấy giảm án. Nhưng khi một thế lực siêu nhiên ngoài tầm kiểm soát trỗi dậy, nhóm "phản anh hùng" này buộc phải hợp tác để cứu thế giới… dù chẳng ai trong số họ là người tốt.</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+         </div>
+      </div>
+      <div class="item" data-title=" Mission: Impossible">
+        <img src="hdong8.jpeg" />
+        <div class="content">
+            <p> PHIM HÀNH ĐỘNG </p>
+          <h2> Mission: Impossible</h2>
+          <p>Phim xoay quanh Ethan Hunt-chuyên thực hiện những nhiệm vụ "bất khả thi" như ngăn chặn khủng bố, lật đổ âm mưu toàn cầu, hoặc cứu thế giới trong tình huống thời gian gấp gáp và nguy hiểm tột độ. Ethan cùng đội của mình thường xuyên đối đầu với các kẻ thù tàn bạo, phản bội nội bộ và công nghệ gián điệp tối tân. .</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+         </div>
+      </div>
+    </div>
+  
+    <div class="arrows hanhdong-arrows">
+      <button class="prev-hanhdong">&lt;</button>
+      <button class="next-hanhdong">&gt;</button>
+    </div>
+  
+    <div class="thumbnail hanhdong-thumbnail">
+      <div class="item active"><img src="/hdong1,.jpeg" /></div>
+      <div class="item"><img src="/hdong2,.jpeg" /></div>
+      <div class="item"><img src="/hdong3,.webp" /></div>
+      <div class="item"><img src="/hdong4,.webp" /></div>
+      <div class="item"><img src="/hdong5,.webp" /></div>
+      <div class="item"><img src="/hdong6,.webp" /></div>
+      <div class="item"><img src="/hdong8,.webp" /></div>
+
+    </div>
+  </section>
+  
+  <!-- === SLIDER PHIM TÌNH CẢM === -->
+  <section class="slider tinhcam-slider genre-section">
+    <div class="list tinhcam-list">
+      <div class="item active" data-title="Me Before You">
+        <img src="tcam1.jpeg" />
+        <div class="content">
+            <p> PHIM TÌNH CẢM</p>
+          <h2>Me Before You</h2>
+          <p>MBan đầu lạnh lùng và tuyệt vọng, Will dần thay đổi khi Lou mang đến cho anh những điều tươi sáng và niềm vui sống. Thế nhưng, ẩn sau đó là một quyết định đau lòng mà Will đã ấp ủ từ trước – điều sẽ thay đổi cuộc đời cả hai mãi mãi…</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+        </div>
+      </div>
+      <div class="item"data-title="Titanic">
+        <img src="tcam2.jpeg" />
+        <div class="content">
+            <p> PHIM TÌNH CẢM</p>
+          <h2>Titanic</h2>
+          <p>Jack và Rose, hai con người đến từ hai thế giới khác nhau, gặp gỡ trên tàu Titanic trong chuyến hành trình định mệnh. Mối tình lãng mạn giữa họ vượt qua mọi rào cản xã hội, nhưng khi tàu gặp nạn, họ phải đối mặt với sự sống còn và mất mát khôn nguôi.</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+        </div>
+      </div>
+      <div class="item"data-title="Shakespeare In Love">
+        <img src="tcam3.webp" />
+        <div class="content">
+            <p> PHIM TÌNH CẢM</p>
+          <h2>Shakespeare In Love</h2>
+          <p>William Shakespeare gặp và yêu Viola, một cô gái mơ ước trở thành diễn viên. Khi viết vở kịch Romeo và Juliet, mối tình của họ trở thành nguồn cảm hứng, nhưng cũng đầy trắc trở và đau đớn vì những rào cản xã hội và tình cảm.</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+         </div>
+      </div>
+      <div class="item"data-title="La La Land">
+        <img src="tcam4.webp" />
+        <div class="content">
+            <p> PHIM TÌNH CẢM</p>
+          <h2>La La Land</h2>
+          <p>La La Land là câu chuyện tình yêu tuyệt đẹp thời hiện đại giữa chàng nhạc công piano tài hoa chuyên diễn tại các quán bar Sebastian và cô diễn viên mới nổi xinh đẹp Mia Dolan. Thế nhưng, ở thiên đường điện ảnh Hollywood, tình yêu và sự thành công dường như không thể song hành. Khi thành công và sự nổi tiếng đến, họ sẽ phải đối mặt ra sao ...</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+         </div>
+      </div>
+      <div class="item"data-title="Chúng Ta Của Sau Này">
+        <img src="tcam6.webp" />
+        <div class="content">
+            <p> PHIM TÌNH CẢM</p>
+          <h2>Chúng Ta Của Sau Này</h2>
+          <p>Đôi trẻ yêu nhau trong gian khó, nhưng lạc mất nhau theo thời gian và chỉ gặp lại khi đã không còn là của nhau.</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+         </div>
+      </div>
+      <div class="item"data-title="Đã đến lúc">
+        <img src="tcam7.webp" />
+        <div class="content">
+            <p> PHIM TÌNH CẢM</p>
+          <h2>Đã đến lúc</h2>
+          <p>Tim Lake, một chàng trai phát hiện mình có khả năng du hành thời gian. Anh sử dụng năng lực này để tìm kiếm tình yêu và hạnh phúc, nhưng dần nhận ra rằng không thể tránh khỏi những mất mát và thử thách trong cuộc sống.</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+          </div>
+      </div>
+      <div class="item"data-title="Gọi Em Bằng Tên Anh">
+        <img src="tcam8..webp" />
+        <div class="content">
+            <p> PHIM TÌNH CẢM</p>
+          <h2>Gọi Em Bằng Tên Anh</h2>
+          <p> Mối quan hệ đầy cảm hứng giữa cậu bé 17 tuổi Elio (Timothée Chalamet) và chàng sinh viên 24 tuổi Oliver (Armie Hammer). Oliver là sinh viên khảo cổ học người Mỹ đến ở trong biệt thự nhà Elio và theo học giáo sư là bố của cậu bé. Hai chàng trai trẻ đã bị cuốn vào một mối tình lãng mạn giữa khung hình tuyệt đẹp của miền quê nước Ý trong một mùa hè rực rỡ năm 1983.</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="arrows tinhcam-arrows">
+      <button class="prev-tinhcam">&lt;</button>
+      <button class="next-tinhcam">&gt;</button>
+    </div>
+  
+    <div class="thumbnail tinhcam-thumbnail">
+      <div class="item active"><img src="tcam1,.jpeg" /></div>
+      <div class="item"><img src="tcam2,.jpeg" /></div>
+      <div class="item"><img src="tcam3,.webp" /></div>
+      <div class="item "><img src="tcam4,.webp" /></div>
+      <div class="item"><img src="tcam6,.webp" /></div>
+      <div class="item"><img src="tcam7,.webp" /></div>
+      <div class="item"><img src="tcam8.webp" /></div>
+
+    </div>
+  </section>
+  <!--hài hước-->
+  <section class="slider haihuoc-slider genre-section">
+    <div class="list haihuoc-list">
+      <div class="item active" data-title="Bỗng Dưng Trúng Số">
+        <img src="h1.webp" />
+        <div class="content">
+          <p>PHIM HÀI</p>
+          <h2>Bỗng Dưng Trúng Số</h2>
+          <p>Một người đàn ông bình thường bỗng trúng số, khiến cuộc sống của anh thay đổi hoàn toàn. Tuy nhiên, anh phải đối mặt với những tình huống trớ trêu, những người bạn cũ và những quyết định khó khăn trong cuộc sống mới đầy tiền bạc và rắc rối.</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+        </div>
+      </div>
+      <div class="item" data-title="Gái già lắm chiêu V">
+        <img src="h2.webp" />
+        <div class="content">
+            <p>PHIM HÀI</p>
+          <h2>Gái già lắm chiêu V</h2>
+        <p>ba chị em nhà họ Lý sống tại biệt thự Bạch Trà Viên xa hoa ở Huế. Khi chiếc phượng bào Phượng Hoàng tam vĩ – báu vật gia tộc – bị đánh cắp, những mâu thuẫn, tham vọng và bí mật gia đình dần được hé lộ, đẩy họ vào cuộc chiến đầy kịch tính giữa tình thân và quyền lực.</p>
+        <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+     </div>
+      </div>
+      <div class="item" data-title="Siêu ngốc gặp nhau">
+        <img src="h3.webp" />
+        <div class="content">
+            <p>PHIM HÀI</p>
+          <h2>Siêu ngốc gặp nhau</h2>
+          <p>Hai người bạn ngốc nghếch Lloyd và Harry lên đường tìm con gái thất lạc, kéo theo loạt tình huống hài hước đến "khó đỡ".</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+         </div>
+      </div>
+          <div class="item" data-title="Nghề siêu dễ">
+            <img src="h4.webp" />
+            <div class="content">
+              <p>PHIM HÀI</p>
+              <h2>Nghề siêu dễ</h2>
+              <p>Phim xoay quanh công việc vận hành một tiệm cơm tấm độc nhất vô nhị ở Sài Gòn. Phim kể về một cảnh sát đã nghỉ hưu cùng các thanh niên "bất hảo" trong xóm mua lại một quán ăn để làm nơi theo dõi tên trùm tội phạm. Tuy nhiên, quán bất ngờ nổi tiếng với món cơm tấm sườn bò nướng vị phở, khiến cho phi vụ điều tra của họ đứng trước nguy cơ đổ bể.</p>
+              <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+             </div>
+          </div>
+            <div class="item" data-title="Hồn papa da con gái">
+                <img src="h5.webp" />
+                <div class="content">
+                  <p>PHIM HÀI</p>
+                  <h2>Hồn papa da con gái</h2>
+                  <p> Với mong muốn hai cha con có thể thân thiết và hiểu nhau hơn, linh hồn của người mẹ đã thực hiện một lời nguyền khiến họ bị tráo đổi. Họ sẽ phải đối mặt với những tình huống oái ăm, trớ trêu như thế nào trong thời gian 7 ngày? </p>
+                  <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+                 </div>
+            </div>
+                <div class="item" data-title="Lừa đểu gặp lừa đảo">
+                    <img src="h6.webp" />
+                    <div class="content">
+                      <p>PHIM HÀI</p>
+                      <h2>Lừa đểu gặp lừa đảo</h2>
+                      <p>Lừa Đểu Gặp Lừa Đảo xoay quanh lần gặp gỡ "oan gia" giữa siêu lừa đảo Tower cùng cô nàng bị lừa tình Ina, cả 2 sẽ cùng hợp tác trong phi vụ "lừa lại tên lừa đểu" Petch - tên bạn trai bội bạc của Ina bằng những chiêu trò lừa đảo không hồi kết.</p>
+                      <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+                    </div>
+                </div>
+                    <div class="item" data-title="Ai Chết Giơ Tay: Pháp Sư Mù.">
+                        <img src="h7.webp" />
+                        <div class="content">
+                          <p>PHIM HÀI</p>
+                          <h2>Ai Chết Giơ Tay: Pháp Sư Mù.</h2>
+                          <p> Sinh ra trong gia đình làm nghề trừ tà, vị pháp sư nghiệp dư nọ sử dụng chuyên môn của mình để bắt ma ở khu phố ngập tràn hoạt động siêu nhiên.</p>
+                          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+                        </div>
+        </div>
+      </div>
+  
+    <div class="arrows haihuoc-arrows">
+      <button class="prev-haihuoc">&lt;</button>
+      <button class="next-haihuoc">&gt;</button>
+    </div>
+  
+    <div class="thumbnail haihuoc-thumbnail">
+      <div class="item active"><img src="h1,.webp" /></div>
+      <div class="item"><img src="h2,.webp" /></div>
+      <div class="item"><img src="h3,.webp" /></div>
+      <div class="item"><img src="h4,.webp" /></div>
+      <div class="item"><img src="h5,.webp" /></div>
+      <div class="item"><img src="h6,.webp" /></div>
+      <div class="item"><img src="h7,.webp" /></div>
+    </div>
+  </section>
+<!--anime-->  
+<section class="slider anime-slider genre-section">
+    <div class="list anime-list">
+      <div class="item active" data-title="Lạc vào khu rừng đom đóm">
+        <img src="an1.webp" />
+        <div class="content">
+          <p>ANIME</p>
+          <h2>Lạc vào khu rừng đom đóm</h2>
+          <p>Một ngày hè nóng nực, một cô bé bị lạc vào một khu rừng mê hoặc của thần núi, nơi các linh hồn trú ngụ. Một cậu bé xuất hiện trước mặt cô, nhưng cô không thể chạm vào cậu vì sợ cậu biến mất. Và vì vậy một cuộc phiêu lưu kỳ diệu đang chờ đợi ...</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+         </div>
+      </div>
+      <div class="item" data-title="Ponyo – cô bé người cá">
+        <img src="an2.webp" />
+        <div class="content">
+            <p>ANIME</p>
+          <h2>Ponyo – cô bé người cá</h2>
+          <p>Cậu bé năm tuổi Sosuke làm bạn với Ponyo – cô công chúa cá vàng tha thiết muốn trở thành con người.</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+         </div>
+      </div>
+      <div class="item" data-title="Mộ đom đóm">
+        <img src="an3.webp" />
+        <div class="content">
+            <p>ANIME</p>
+          <h2>Mộ đom đóm</h2>
+          <p>Bộ phim được đặt trong bối cảnh giai đoạn cuối chiến tranh thế giới thứ 2 ở Nhật, kể về câu chuyện cảm động về tình anh em của hai đứa trẻ mồ côi là Seita và Setsuko. Hai anh em mất mẹ trong một trận bom dữ dội của không quân Mỹ khi cha của chúng đang chiến đấu cho Hải quân Nhật. Hai đứa bé phải vật lộn giữa nạn đói, giữa sự thờ ơ của những người xung quanh (trong đó có cả người cô họ của mình)...</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+         </div>
+      </div>
+      <div class="item" data-title="Thế Giới Bí Mật Của Arrietty">
+        <img src="an4..webp" />
+        <div class="content">
+            <p>ANIME</p>
+          <h2>Thế Giới Bí Mật Của Arrietty</h2>
+          <p> Khi "người vay mượn" nhỏ bé tên Arrietty kết bạn với cậu nhóc to lớn hơn cô gấp nhiều lần, cô cũng phải bảo vệ gia đình mình trước những người khổng lồ cao chót vót.</p>
+          <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+        </div>
+      </div>
+        <div class="item" data-title="Vùng Đất Linh Hồn">
+            <img src="an5.webp" />
+            <div class="content">
+                <p>ANIME</p>
+              <h2>Vùng Đất Linh Hồn</h2>
+              <p>Chihiro – cô bé 10 tuổi – lạc vào thế giới linh hồn sau khi cha mẹ bị biến thành heo. Để cứu họ và trở về, cô phải làm việc tại nhà tắm công cộng của phù thủy Yubaba, nơi đầy rẫy những sinh vật kỳ lạ, thử thách và cả phép màu.</p>
+              <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+             </div>
+        </div>
+            <div class="item" data-title="My Neighbor Totoro">
+                <img src="an6.webp" />
+                <div class="content">
+                    <p>ANIME</p>
+                  <h2>My Neighbor Totoro</h2>
+                  <p>Những ngày cùng cha nghỉ hè tại miền quê thuộc đất nước Nhật Bản, hai chị em bé nhỏ đã kết bạn với những sinh vật huyền bí sống trong khu rừng gần đó.</p>
+                  <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+                 </div>
+            </div>
+                <div class="item" data-title="Dáng hình thanh âm">
+                    <img src="an7.webp" />
+                    <div class="content">
+                        <p>ANIME</p>
+                      <h2>Dáng hình thanh âm</h2>
+                      <p>Shoya – một cậu học sinh từng bắt nạt cô bạn khiếm thính Shoko. Nhiều năm sau, anh tìm cách chuộc lỗi và hàn gắn quá khứ, mở ra hành trình chữa lành và tha thứ.</p>
+                      <button class="watch-btn" onclick="openModal('/venom.mp4')">▶ Watch</button>
+                     </div>
+
+    </div>
+            </div>
+  
+    <div class="arrows anime-arrows">
+      <button class="prev-anime">&lt;</button>
+      <button class="next-anime">&gt;</button>
+    </div>
+  
+    <div class="thumbnail anime-thumbnail">
+      <div class="item active"><img src="an1,.webp" /></div>
+      <div class="item"><img src="an2,.webp" /></div>
+      <div class="item"><img src="an3,.webp" /></div>
+      <div class="item"><img src="an4,.webp" /></div>
+      <div class="item"><img src="an5,.webp" /></div>
+      <div class="item"><img src="an6,.webp" /></div>
+      <div class="item"><img src="an7,.webp" /></div>
+    </div>
+  </section>
+
+<!-- Modal video -->
+<div id="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); z-index:9999;">
+    <!-- Nút đóng -->
+    <span onclick="closeModal()" style="position:absolute; top:20px; right:30px; font-size:40px; color:white; cursor:pointer;">&times;</span>
+    
+    <!-- Video -->
+    <video id="trailer" controls autoplay style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:90%; height:auto; max-height:90%;">
+        <source src="" type="video/mp4">
+      Trình duyệt không hỗ trợ video.
+    </video>
+</div>
+<script src="theloai.js"></script>
+    
+</body>
+</html>
